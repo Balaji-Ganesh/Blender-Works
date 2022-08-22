@@ -60,7 +60,7 @@
 
 # Notes Blender for beginners tutorials
 
-## Day-1: Absolute Basics
+# Day-1: **Absolute Basics**
 
 - Basics related to scaling, grabbing, changing views .. (as noted above)
 
@@ -69,3 +69,34 @@
    - Select the objects.
    - Goto Snap menu (in top-center), select `Face` and tick the `Project Individual Elements` and `Align Rotation To Target` and enable `Affect`s.,
    - Make sure to **enable** Snap mode and test it out, else it won't
+
+# Day-2: **Editing Objects**
+
+- Working in edit mode. Press <kbd>Tab</kbd> in object mode, to switch to Edit mode.
+
+## Vertex / Edge / Face selection
+
+|   Selection type | Procedure    | Notes |
+| ---------------: | :----------- | :---- |
+| Vertex Selection | <kbd>1</kbd> |       |
+|   Edge selection | <kbd>2</kbd> |       |
+|   Face selection | <kbd>3</kbd> |       |
+
+**NOTE**: These keys are not of Numpad, instead alphanumeric pad.
+
+## Mesh Selection ways
+
+_(The below ways, mostly work only in Edit mode)_.
+
+|                          Selection need | Procedure                                      | Notes                                           |
+| --------------------------------------: | :--------------------------------------------- | :---------------------------------------------- |
+|                   Selecting entire loop | Hold <kbd>Alt</kbd> and select                 |                                                 |
+|      Selecting multiple in custom order | Hold <kbd>Shift</kbd> and select multiple      |                                                 |
+|          Multiple selection in sequence | Hold <kbd>ctrl</kbd> and select first and last | It chooses shortest path between start and stop |
+| Selecting linked mesh _(automatically)_ | <kbd>L</kbd>                                   | Hover the cursor, where to happen               |
+|                 Inverting the selection | <kbd>ctrl</kbd>+<kbd>I</kbd>                   | Do after selection                              |
+
+## Proportionate editing <kbd>O</kbd>
+- Problem: Whenever we select a (say) face and make some transformation to it, it makes hard deformation.
+- We need **Smooth Transformation**, i.e., if we transform a face, it will also influence its neighbours, making it smooth deformation.
+- To do this, enable **Proportionate Editing** at top-middle _(extreme-right option)_.
